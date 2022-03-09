@@ -1,0 +1,29 @@
+{
+  "name": "appgar",
+  "version": "1.0.0",
+  "description": "An app to track recurring goals",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx nodemon server/index.js",
+    "react-dev": "webpack --config ./webpack.config.js -w"
+  },
+  "author": "Annie Johnston",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/plugin-transform-runtime": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "@babel/preset-react": "^7.12.13",
+    "babel-loader": "^8.2.2",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^4.5.0"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.3",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "underscore": "^1.12.1"
+  }
+}
