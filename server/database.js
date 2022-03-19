@@ -15,25 +15,6 @@ let imageSchema = mongoose.Schema(
 
 let Image = mongoose.model('Image', imageSchema)
 
-Image.deleteMany({})
-.then(() => console.log('deleted'))
-
-Image.updateMany({})
-
-Image.find().count()
-  .then(result => {
-    console.log(result)
-    if (result < 2000) {
-      Image.insertMany(photoData, function (error, docs) {
-        if (error) {
-          console.log(error)
-        } else {
-          console.log(result, 'success')
-        }
-      });
-    }
-  })
-
 async function getImages(input, callback) {
   var select = {}
   if (input.status && input.status !== 'all') select.status = input.status
